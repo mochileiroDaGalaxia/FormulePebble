@@ -1,14 +1,14 @@
 {
-    "versionLabel": "1.1.8",
+    "versionLabel": "1.2.1",
     "uuid": "663627ab-0ba3-442f-8cb7-2e7df6107dd7",
     "appKeys": {},
-    "longName": "PebbleFormulas",
+    "longName": "FormulePebble",
     "versionCode": 1,
     "capabilities": [
         ""
     ],
-    "shortName": "PebbleFormulas",
-    "companyName": "Blackpaw78",
+    "shortName": "Formule",
+    "companyName": "Adrenocortico",
     "watchapp": {
         "watchface": false
     },

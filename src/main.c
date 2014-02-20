@@ -11,7 +11,7 @@
 	
 #define NUM_MATH_MENU_ITEMS 4
 #define NUM_MENU_SECTIONS 4
-#define NUM_SCIENCE_MENU_ITEMS 4
+#define NUM_SCIENCE_MENU_ITEMS 3
 #define NUM_OTHER_MENU_ITEMS 1
 #define NUM_ABOUT_MENU_ITEMS 2
 static Window *window;
@@ -48,9 +48,6 @@ static void physics_select_callback(int index, void *ctx) {
 static void chemistry_select_callback(int index, void *ctx) {
   show_chemistry_menu();
 }
-static void elec_select_callback(int index, void *ctx) {
-  show_elec_menu();
-}
 static void conversion_select_callback(int index, void *ctx) {
   show_conversion_menu();
 }
@@ -66,69 +63,64 @@ static void window_load(Window *window) {
 
   math_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Algebra",
-	.subtitle = "Algebraic Formulas",
+	.subtitle = "Formule Algebriche",
     .callback = algebra_select_callback,
   };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Geometry",
-	.subtitle = "Geometric Formulas",
+    .title = "Geometria",
+	.subtitle = "Formule Geometriche",
     .callback = geometry_select_callback,
   };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Trigonometry",
-	.subtitle = "Trig Formulas",
+    .title = "Trigonometia",
+	.subtitle = "Formule Trigonometriche",
     .callback = trig_select_callback,
   };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Calculus",
-	.subtitle = "Calc Formulas",
+    .title = "Analisi",
+	.subtitle = "Formule Analitiche",
     .callback = calc_select_callback,
   };
   science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Biology",
-	.subtitle = "Bio Formulas",
-    .callback = bio_select_callback,
-  };
-  science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Physics",
-	.subtitle = "Yay Physics!",
+    .title = "Fisica",
+	.subtitle = "Formule Fisiche",
     .callback = physics_select_callback,
   };
   science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Chemistry",
-	.subtitle = "Chemistry Formulas",
+    .title = "Chimica",
+	.subtitle = "Formule Chimiche",
     .callback = chemistry_select_callback,
   };
   science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Electricity",
-	.subtitle = "Electrical Formulas",
-    .callback = elec_select_callback,
+    .title = "Biologia",
+	.subtitle = "Bio-Formule",
+    .callback = bio_select_callback,
   };
   other_menu_items[num_a4_items++] = (SimpleMenuItem){
-    .title = "Conversions",
-	.subtitle = "Unit Conversion",
+    .title = "Conversioni",
+	.subtitle = "Conversioni d'unità",
     .callback = conversion_select_callback,
   };
   about_menu_items[num_a3_items++] = (SimpleMenuItem){
-    .title = "Version",
+    .title = "Versione",
 	.subtitle = "1.1.8 Stable",
   };
   about_menu_items[num_a3_items++] = (SimpleMenuItem){
-    .title = "Contact Me",
-	.subtitle = "blackpaw1996@gmail.com",
+    .title = "Contattami",
+	.subtitle = "francesco.dulio@gmail.com",
   };
   menu_sections[0] = (SimpleMenuSection){
-  .title ="Math Formulas",
+  .title ="Matematica",
   .num_items = NUM_MATH_MENU_ITEMS,
   .items = math_menu_items,
   };
   menu_sections[1] = (SimpleMenuSection){
-  .title ="Science Formulas",
+  .title ="Scienze",
   .num_items = NUM_SCIENCE_MENU_ITEMS,
   .items = science_menu_items,
   };
   menu_sections[2] = (SimpleMenuSection){
-  .title ="Other",
+  .title ="Altro",
   .num_items = NUM_OTHER_MENU_ITEMS,
   .items = other_menu_items,
   };

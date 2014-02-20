@@ -25,7 +25,7 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   elec_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Ohm's Law",
+    .title = "Leggi di Ohm",
 	.callback = ohms_select_callback,
   };
 

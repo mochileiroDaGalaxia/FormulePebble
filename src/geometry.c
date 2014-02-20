@@ -2,7 +2,7 @@
 #include "geometry.h"
 
 	
-#define NUM_GEOMETRY_MENU_ITEMS 4
+#define NUM_GEOMETRY_MENU_ITEMS 6
 
 static Window *window;
 
@@ -35,6 +35,14 @@ static void window_load(Window *window) {
   geometry_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Cone Volume",
 	.subtitle = "(1/3)b*h = 1/3*pi*r²*h"
+  };
+	geometry_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Sfera",
+	.subtitle = "(Xi-X0)²=r²",
+  };
+	geometry_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Centro sfera",
+	.subtitle = "X0=-½a",
   };
   menu_sections.num_items = NUM_GEOMETRY_MENU_ITEMS;
   menu_sections.items = geometry_menu_items;
