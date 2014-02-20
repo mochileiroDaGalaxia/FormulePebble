@@ -20,51 +20,51 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Resistance 1",
+    .title = "Resistenza 1",
 	.subtitle = "R = V/I",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Resistance 2",
+    .title = "Resistenza 2",
 	.subtitle = "R = P/I²",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Resistance 3",
+    .title = "Resistenza 3",
 	.subtitle = "R = V²/P",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Current 1",
+    .title = "Corrente 1",
 	.subtitle = "I = V/R",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Current 2",
+    .title = "Corrente 2",
 	.subtitle = "(P/R)^1/2)",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Current 3",
+    .title = "Corrente 3",
 	.subtitle = "I = P/V",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Voltage 1",
+    .title = "Potenziale 1",
 	.subtitle = "V = I x R",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Voltage 2",
+    .title = "Potenziale 2",
 	.subtitle = "V = P/I",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Voltage 3",
+    .title = "Potenziale 3",
 	  .subtitle = "V =(P x R)^1/2",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Power 1",
+    .title = "Potenza 1",
 	  .subtitle = "P = I²xR",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Power 2",
+    .title = "Potenza 2",
 	  .subtitle = "P = V x I",
   };
   ohms_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Power 3",
+    .title = "Potenza 3",
 	  .subtitle = "P = V²/R",
   };
   menu_sections.num_items = NUM_OHMS_MENU_ITEMS;

@@ -21,20 +21,20 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   geometry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Pythagorean Theorem",
+    .title = "Teorema di Pitagora",
 	.subtitle = "A²+B²=C²"
   };
   geometry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Area of a Circle",
-	.subtitle = "pi*r²"
+    .title = "Area cerchio",
+	.subtitle = "πr²"
   };
   geometry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Area of a Triangle",
-	.subtitle = "1/2*B*H"
+    .title = "Area triangolo",
+	.subtitle = "½BH"
   };
   geometry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Cone Volume",
-	.subtitle = "(1/3)b*h = 1/3*pi*r²*h"
+    .title = "Volume cono",
+	.subtitle = "(1/3)bh = 1/3πr²h"
   };
 	geometry_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Sfera",

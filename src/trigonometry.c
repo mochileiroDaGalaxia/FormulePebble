@@ -22,48 +22,48 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Pythag Identity 1",
+    .title = "Identità 1",
 	.subtitle = "sin²u+cos²u = 1",
   };
 
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Pythag Identity 2",
+    .title = "Identità 2",
 	.subtitle = "1+tan²u= = sec²u",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Pythag Identity 3",
+    .title = "Identità 3",
 	.subtitle = "1+cot²u = sec²u",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Quotient Identity 1",
+    .title = "Identità quoziente 1",
 	.subtitle = "tan u = (sin u/cos u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Quotient Identity 2",
+    .title = "Identità quoziente 2",
 	.subtitle = "cot u = (cos u/sin u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Reciprocal Identity 1",
+    .title = "Identità reciproca 1",
 	.subtitle = "sin u = (1/csc u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Reciprocal Identity 2",
+    .title = "Identità reciproca 2",
 	.subtitle = "cos u = (1/sec u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Reciprocal Identity 3",
+    .title = "Identità reciproca 3",
 	.subtitle = "tan u = (1/cot u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Reciprocal Identity 4",
+    .title = "Identità reciproca 4",
 	.subtitle = "csc u = (1/sin u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Reciprocal Identity 5",
+    .title = "Identità reciproca 5",
 	.subtitle = "sec u = (1/cos u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Reciprocal Identity 2",
+    .title = "Identità reciproca 2",
 	.subtitle = "cot u = (1/tan u)",
   };
 

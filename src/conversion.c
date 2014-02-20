@@ -20,28 +20,28 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   conversion_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Farenheit to C",
+    .title = "Farenheit in C",
 	.subtitle = "C = 5/9*(F-32)",
   };
   conversion_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Celcius to K",
+    .title = "Celcius in K",
 	.subtitle = "K = C+273",
   };
   conversion_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Celcius to F",
+    .title = "Celcius in F",
 	.subtitle = "F = 9/5*(C+32)",
   };
   conversion_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Miles to Kilometers",
-	.subtitle = "Km = mi/.62137",
+    .title = "Miglia in Kilometri",
+	.subtitle = "Km = mi/0.62137",
   };
   conversion_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Grams to Ounces",
-	.subtitle = "oz = g *0.035274",
+    .title = "Grammi in Once",
+	.subtitle = "oz = 0.035274 g",
   };
   conversion_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Oz to Cups",
-	.subtitle = "1 cup = 8fl oz",
+    .title = "Km/h in m/s",
+	.subtitle = "1 km/h = 0.278 m/s",
   };
 
 

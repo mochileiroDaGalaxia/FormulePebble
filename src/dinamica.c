@@ -1,7 +1,7 @@
 #include "pebble.h"
-#include "chemistry.h"
+#include "dinamica.h"
 	
-#define NUM_CHEMISTRY_MENU_ITEMS 3
+#define NUM_DINAMICA_MENU_ITEMS 4
 
 static Window *window;
 
@@ -9,7 +9,7 @@ static SimpleMenuLayer *simple_menu_layer;
 
 static SimpleMenuSection menu_sections;
 
-static SimpleMenuItem chemistry_menu_items[NUM_CHEMISTRY_MENU_ITEMS];
+static SimpleMenuItem dinamica_menu_items[NUM_DINAMICA_MENU_ITEMS];
 
 static void window_unload(Window *window) {
   simple_menu_layer_destroy(simple_menu_layer);
@@ -17,32 +17,37 @@ static void window_unload(Window *window) {
 }
 
 static void window_load(Window *window) {
-
   int num_a_items = 0;
-
-  chemistry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Legge universale",
-	.subtitle = "PV = nRT"
+	
+  dinamica_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Energia cinetica",
+	.subtitle = "K=½mv²"
   };
-  chemistry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Costante universale Gas",
-	.subtitle = "0.08206 L·atm·mol−1·K−1"
+  dinamica_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Energia potenziale",
+	.subtitle = "V=mgh"
   };
-  chemistry_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Legge di Boyle",
-	.subtitle = "V1/V2=P2/P1"
+  dinamica_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Lavoro",
+	.subtitle = "W=F·d·cos(a)"
   };
-  menu_sections.num_items = NUM_CHEMISTRY_MENU_ITEMS;
-  menu_sections.items = chemistry_menu_items;
+  dinamica_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Potenziale molla",
+	.subtitle = "V=½kx²"
+  };
+	
+  menu_sections.num_items = NUM_DINAMICA_MENU_ITEMS;
+  menu_sections.items = dinamica_menu_items;
 
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_frame(window_layer);
 
   simple_menu_layer = simple_menu_layer_create(bounds, window, &menu_sections, 1, NULL);
-	
+
   layer_add_child(window_layer, simple_menu_layer_get_layer(simple_menu_layer));
 }
-void show_chemistry_menu(){
+
+void show_dinamica_menu(){
    window = window_create();
 
   window_set_window_handlers(window, (WindowHandlers) {

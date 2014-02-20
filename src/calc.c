@@ -22,31 +22,31 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Product Rule",
+    .title = "Regola del prodotto",
 	.subtitle = "uv' + vu'"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Quotient Rule",
+    .title = "Regola del quoziente",
 	.subtitle = "(vu' - uv')/v²"
   };  
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Chain Rule",
-	.subtitle = "f(g(x)) = f'(g(x))*g'(x)"
+	.subtitle = "f(g(x)) = f'(g(x))·g'(x)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Derivative ln(x)",
+    .title = "D(ln(x))",
 	.subtitle = "f'(ln x)= (1/x)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Derivative e^x",
-	.subtitle = "f'(e^x)= e^x *(du/dx)"
+    .title = "D(e^x)",
+	.subtitle = "f'(e^x)= e^x·(du/dx)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Arcsine Derivative",
+    .title = "D[arcsine(x)]",
 	.subtitle = "1/((1-x²)^1/2)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Arctan Derivative",
+    .title = "D[arctan(x)]",
 	.subtitle = "f'(arctan x) = 1/1+x²"
   };
 

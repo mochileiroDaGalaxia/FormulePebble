@@ -7,7 +7,6 @@
 #include "physics.h"
 #include "chemistry.h"
 #include "conversion.h"
-#include "electricity.h"
 	
 #define NUM_MATH_MENU_ITEMS 4
 #define NUM_MENU_SECTIONS 4
@@ -33,11 +32,11 @@ static void algebra_select_callback(int index, void *ctx) {
 static void geometry_select_callback(int index, void *ctx) {
   show_geometry_menu();
 }
-static void trig_select_callback(int index, void *ctx) {
-  show_trig_menu();
-}
 static void calc_select_callback(int index, void *ctx) {
   show_calc_menu();
+}
+static void trig_select_callback(int index, void *ctx) {
+  show_trig_menu();
 }
 static void bio_select_callback(int index, void *ctx) {
   show_bio_menu();
@@ -72,14 +71,14 @@ static void window_load(Window *window) {
     .callback = geometry_select_callback,
   };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Trigonometia",
-	.subtitle = "Formule Trigonometriche",
-    .callback = trig_select_callback,
-  };
-  math_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Analisi",
 	.subtitle = "Formule Analitiche",
     .callback = calc_select_callback,
+  };
+  math_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Trigonometia",
+	.subtitle = "Formule Trigonometriche",
+    .callback = trig_select_callback,
   };
   science_menu_items[num_a2_items++] = (SimpleMenuItem){
     .title = "Fisica",
@@ -102,12 +101,12 @@ static void window_load(Window *window) {
     .callback = conversion_select_callback,
   };
   about_menu_items[num_a3_items++] = (SimpleMenuItem){
-    .title = "Versione",
-	.subtitle = "1.1.8 Stable",
-  };
-  about_menu_items[num_a3_items++] = (SimpleMenuItem){
     .title = "Contattami",
 	.subtitle = "francesco.dulio@gmail.com",
+  };
+  about_menu_items[num_a3_items++] = (SimpleMenuItem){
+    .title = "Versione",
+	.subtitle = "1.1.8 Stable",
   };
   menu_sections[0] = (SimpleMenuSection){
   .title ="Matematica",

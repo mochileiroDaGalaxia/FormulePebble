@@ -21,7 +21,7 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   bio_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Growth Formula",
+    .title = "Crescita",
 	.subtitle ="Pf = Pi*2^t/d",
   };
   bio_menu_items[num_a_items++] = (SimpleMenuItem){
