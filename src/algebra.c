@@ -1,7 +1,7 @@
 #include "pebble.h"
 #include "algebra.h"
 	
-#define NUM_ALGEBRA_MENU_ITEMS 8
+#define NUM_ALGEBRA_MENU_ITEMS 17
 
 static Window *window;
 
@@ -21,7 +21,7 @@ static void window_load(Window *window) {
 
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
       .title = "Coefficiente angolare",
-      .subtitle = "M = (Y2-Y1)/(X2-X1)",
+      .subtitle = "M=(Y2-Y1)/(X2-X1)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
       .title = "Punto medio",
@@ -29,27 +29,63 @@ static void window_load(Window *window) {
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
    	  .title = "Soluzione eq quadratica",
-	  .subtitle = "(-b ±(b²-4ac)^½)/(2a)",
+	  .subtitle = "(-b±(b²-4ac)^½)/(2a)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
 	  .title = "Retta P, Q",
-	  .subtitle = "Xi=Pi+t(Pi-Qi)",
+	  .subtitle = "Xi=P+t(P-Q)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-	  .title = "Piano P, Q giacitura",
-	  .subtitle = "Xi=Pi+t(Pi-Qi)+s(Wi)",
+	  .title = "Piano P Q w",
+	  .subtitle = "Xi=P+t(P-Q)+s(w)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-	  .title = "Distanza tra due punti",
-	  .subtitle = "d(P,Q)=|ax+by+cz+d|/(a²+b²+c²)",
+	  .title = "Distanza punto piano",
+	  .subtitle = "d(Pπ)=|ax+by+cz+d|/(a²+b²+c²)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
 	  .title = "Formula di Grassmann",
-	  .subtitle = "dim(W1+W2)=dim(W1)+dim(W2)-dim(W1*W2)",
+	  .subtitle = "dim(W+V)=dim(W)+dim(V)-dim(W∩V)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
 	  .title = "Trasposta del prodotto",
 	  .subtitle = "t(AB)=tBtA",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Matrice simmetrica",
+	  .subtitle = "A=tA",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Matrice antisimmetrica",
+	  .subtitle = "A=-tA",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Teorema dimensioni",
+	  .subtitle = "n=dim(Ker)+dim(Im)",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Molteplicità algebrica a",
+	  .subtitle = "Esponente autovalore",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Molteplicità geometrica g",
+	  .subtitle = "g=n-rk(A-aI)",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Rango rk",
+	  .subtitle = "Dim max det≠0",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Diagonalizzabilità",
+	  .subtitle = "1 ≤ g ≤ a ≤ n",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Teorema di Binet",
+	  .subtitle = "det(AB)=det(A)·det(B)",
+  };
+	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
+	  .title = "Teorema del rango",
+	  .subtitle = "det(A)≠0 se rk(A)=n se ∃A^-1",
   };
 
   menu_sections.num_items = NUM_ALGEBRA_MENU_ITEMS;

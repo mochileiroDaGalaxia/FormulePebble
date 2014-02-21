@@ -1,7 +1,7 @@
 #include "pebble.h"
 #include "static.h"
 	
-#define NUM_STATIC_MENU_ITEMS 2
+#define NUM_STATIC_MENU_ITEMS 4
 
 static Window *window;
 
@@ -20,12 +20,20 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   static_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Equilibrio",
-	.subtitle = "F1+F2+...=0",
+    .title = "Eq Cinematica",
+	.subtitle = "V1²=V0²+2a(∆x)"
   };
   static_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Equilibrio",
-	.subtitle = "M1+M2+...=0",
+    .title = "Eq Cinematica",
+	.subtitle = "d=Vi·t+½at²"
+  };
+  static_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Eq Cinematica",
+	.subtitle = "Vf=Vi+at"
+  };
+  static_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Eq Cinematica",
+	.subtitle = "d=(Vi+Vf/2)t"
   };
   
   menu_sections.num_items = NUM_STATIC_MENU_ITEMS;

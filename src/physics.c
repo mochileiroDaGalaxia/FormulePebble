@@ -46,7 +46,7 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   physics_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Cinematica",
+    .title = "Meccanica",
 	.callback = cin_select_callback
   };
   physics_menu_items[num_a_items++] = (SimpleMenuItem){

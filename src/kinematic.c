@@ -29,28 +29,12 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   cin_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Statica",
+    .title = "Cinematica",
 	.callback = static_select_callback,
   };
   cin_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Dinamica",
 	.callback = dinamica_select_callback,
-  };
-  cin_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Eq Cinematica",
-	.subtitle = "V1²=V0²+2a(∆x)"
-  };
-  cin_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Eq Cinematica",
-	.subtitle = "d=Vi·t+½at²"
-  };
-  cin_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Eq Cinematica",
-	.subtitle = "Vf=Vi+at"
-  };
-  cin_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Eq Cinematica",
-	.subtitle = "d=(Vi+Vf/2)t"
   };
 
   menu_sections.num_items = NUM_CIN_MENU_ITEMS;
