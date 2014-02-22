@@ -60,21 +60,6 @@ static void window_load(Window *window) {
   int num_a3_items = 0;
   int num_a4_items = 0;
 
-  science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Fisica",
-	.subtitle = "Formule Fisiche",
-    .callback = physics_select_callback,
-  };
-  science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Chimica",
-	.subtitle = "Formule Chimiche",
-    .callback = chemistry_select_callback,
-  };
-  science_menu_items[num_a2_items++] = (SimpleMenuItem){
-    .title = "Biologia",
-	.subtitle = "Bio-Formule",
-    .callback = bio_select_callback,
-  };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Algebra",
 	.subtitle = "Formule Algebriche",
@@ -95,6 +80,21 @@ static void window_load(Window *window) {
 	.subtitle = "Formule Trigonometriche",
     .callback = trig_select_callback,
   };
+  science_menu_items[num_a2_items++] = (SimpleMenuItem){
+    .title = "Fisica",
+	.subtitle = "Formule Fisiche",
+    .callback = physics_select_callback,
+  };
+  science_menu_items[num_a2_items++] = (SimpleMenuItem){
+    .title = "Chimica",
+	.subtitle = "Formule Chimiche",
+    .callback = chemistry_select_callback,
+  };
+  science_menu_items[num_a2_items++] = (SimpleMenuItem){
+    .title = "Biologia",
+	.subtitle = "Bio-Formule",
+    .callback = bio_select_callback,
+  };
   other_menu_items[num_a4_items++] = (SimpleMenuItem){
     .title = "Conversioni",
 	.subtitle = "Conversioni d'unità",
@@ -108,12 +108,12 @@ static void window_load(Window *window) {
     .title = "Contattalo",
 	.subtitle = "Blackpaw1996@gmail.com",
   };
-  menu_sections[1] = (SimpleMenuSection){
+  menu_sections[0] = (SimpleMenuSection){
   .title ="Matematica",
   .num_items = NUM_MATH_MENU_ITEMS,
   .items = math_menu_items,
   };
-  menu_sections[2] = (SimpleMenuSection){
+  menu_sections[1] = (SimpleMenuSection){
   .title ="Scienze",
   .num_items = NUM_SCIENCE_MENU_ITEMS,
   .items = science_menu_items,
