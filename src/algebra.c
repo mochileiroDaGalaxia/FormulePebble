@@ -1,7 +1,7 @@
 #include "pebble.h"
 #include "algebra.h"
 	
-#define NUM_ALGEBRA_MENU_ITEMS 17
+#define NUM_ALGEBRA_MENU_ITEMS 12
 
 static Window *window;
 
@@ -20,28 +20,8 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-      .title = "Coefficiente angolare",
-      .subtitle = "M=(Y2-Y1)/(X2-X1)",
-  };
-	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-      .title = "Punto medio",
-	  .subtitle = "(X1+X2)/2,(Y1+Y2)/2",
-  };
-	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
    	  .title = "Soluzione eq quadratica",
 	  .subtitle = "(-b±(b²-4ac)^½)/(2a)",
-  };
-	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-	  .title = "Retta P, Q",
-	  .subtitle = "Xi=P+t(P-Q)",
-  };
-	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-	  .title = "Piano P Q w",
-	  .subtitle = "Xi=P+t(P-Q)+s(w)",
-  };
-	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
-	  .title = "Distanza punto piano",
-	  .subtitle = "d(Pπ)=|ax+by+cz+d|/(a²+b²+c²)",
   };
 	  algebra_menu_items[num_a_items++] = (SimpleMenuItem){
 	  .title = "Formula di Grassmann",
