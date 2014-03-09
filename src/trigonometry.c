@@ -2,7 +2,7 @@
 #include "trigonometry.h"
 
 	
-#define NUM_TRIG_MENU_ITEMS 11
+#define NUM_TRIG_MENU_ITEMS 14
 
 static Window *window;
 
@@ -23,49 +23,62 @@ static void window_load(Window *window) {
 
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità 1",
-	.subtitle = "sin²u+cos²u = 1",
+	.subtitle = "sin²(u)+cos²(u) = 1",
   };
 
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità 2",
-	.subtitle = "1+tan²u= = sec²u",
+	.subtitle = "1+tan²(u)= = sec²(u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità 3",
-	.subtitle = "1+cot²u = sec²u",
+	.subtitle = "1+cot²(u) = sec²(u)",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità quoziente 1",
-	.subtitle = "tan u = (sin u/cos u)",
+	.subtitle = "tan(u)=(sin(u)/cos(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità quoziente 2",
-	.subtitle = "cot u = (cos u/sin u)",
+	.subtitle = "cot(u)= (cos(u)/sin(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità reciproca 1",
-	.subtitle = "sin u = (1/csc u)",
+	.subtitle = "sin(u) = (1/csc(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità reciproca 2",
-	.subtitle = "cos u = (1/sec u)",
+	.subtitle = "cos(u) = (1/sec(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità reciproca 3",
-	.subtitle = "tan u = (1/cot u)",
+	.subtitle = "tan(u) = (1/cot(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità reciproca 4",
-	.subtitle = "csc u = (1/sin u)",
+	.subtitle = "csc(u) = (1/sin(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità reciproca 5",
-	.subtitle = "sec u = (1/cos u)",
+	.subtitle = "sec(u) = (1/cos(u))",
   };
   trig_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Identità reciproca 2",
-	.subtitle = "cot u = (1/tan u)",
+	.subtitle = "cot(u) = (1/tan(u))",
   };
+  trig_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Formula duplicazione 1",
+	.subtitle = "sin(2u)=2sin(u)cos(u)",
+  };
+  trig_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Formula duplicazione 2",
+	.subtitle = "cos(2u)=cos²(u)-sin²(u)",
+  };
+  trig_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Formula duplicazione 3",
+	.subtitle = "tan(2u)=2tan(u)/(1-tan²(u))",
+  };
+
 
   menu_sections.num_items = NUM_TRIG_MENU_ITEMS;
   menu_sections.items = trig_menu_items;

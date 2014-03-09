@@ -1,7 +1,7 @@
 #include "pebble.h"
 #include "coniche.h"
 	
-#define NUM_CONI_MENU_ITEMS 6
+#define NUM_CONI_MENU_ITEMS 10
 
 static Window *window;
 
@@ -42,6 +42,22 @@ static void window_load(Window *window) {
 	coni_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Cerchio e=0",
 	.subtitle = "(x-x0)²+(y-y0)²=r²"
+  };
+	coni_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Funzione omografica",
+	.subtitle = "y=(ax+b)/(cx+d)"
+  };
+	coni_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Vertice parabola",
+	.subtitle = "(-b/(2a) ; -∆/(4a)"
+  };
+	coni_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Fuoco parabola",
+	.subtitle = "(-b/(2a) ; (1-∆)/(4a)"
+  };
+	coni_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "Direttrice parabola",
+	.subtitle = "y=-(1+∆)/(4a)"
   };
 	
   menu_sections.num_items = NUM_CONI_MENU_ITEMS;
