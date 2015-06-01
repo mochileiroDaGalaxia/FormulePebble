@@ -1,25 +1,27 @@
 {
-    "versionLabel": "1.3.3",
-    "uuid": "11ea5ddf-5a48-4719-aec8-af42e16dc9a0",
     "appKeys": {},
-    "longName": "FormulePebble",
-    "versionCode": 4,
     "capabilities": [
         ""
     ],
-    "shortName": "Formule",
     "companyName": "Adrenocortico",
-    "watchapp": {
-        "watchface": false
-    },
+    "longName": "Formule",
+    "projectType": "native",
     "resources": {
         "media": [
             {
+                "file": "images/pebbleformula.png",
                 "menuIcon": true,
-                "type": "png",
                 "name": "IMAGE_PEBBLE_ICON",
-                "file": "images/pebbleformula.png"
+                "type": "png"
             }
         ]
+    },
+    "sdkVersion": "2",
+    "shortName": "Formule",
+    "uuid": "11ea5ddf-5a48-4719-aec8-af42e16dc9a0",
+    "versionCode": 1,
+    "versionLabel": "1.4",
+    "watchapp": {
+        "watchface": false
     }
 }
