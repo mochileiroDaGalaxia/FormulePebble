@@ -1,4 +1,4 @@
-PebbleFormulas
+FormulePebble
 ==============
 
 Creating a Pebble App for reference on many Scientific and Mathematical Equations
@@ -54,7 +54,3 @@ Added New sections for Chemistry, and Conversions
 Cleaned some code
 
 Added content to Chemistry and Conversion Sections
-
-
-
-
