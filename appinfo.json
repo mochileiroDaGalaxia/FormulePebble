@@ -3,8 +3,8 @@
     "capabilities": [
         ""
     ],
-    "companyName": "Adrenocortico",
-    "longName": "Formule",
+    "companyName": "Mochileiro",
+    "longName": "Formulas",
     "projectType": "native",
     "resources": {
         "media": [
@@ -17,10 +17,10 @@
         ]
     },
     "sdkVersion": "2",
-    "shortName": "Formule",
+    "shortName": "Formulas",
     "uuid": "11ea5ddf-5a48-4719-aec8-af42e16dc9a0",
     "versionCode": 1,
-    "versionLabel": "1.4",
+    "versionLabel": "1.5",
     "watchapp": {
         "watchface": false
     }

@@ -12,7 +12,7 @@
 #define NUM_MENU_SECTIONS 4
 #define NUM_SCIENCE_MENU_ITEMS 3
 #define NUM_OTHER_MENU_ITEMS 1
-#define NUM_ABOUT_MENU_ITEMS 2
+#define NUM_ABOUT_MENU_ITEMS 3
 static Window *window;
 
 static SimpleMenuLayer *simple_menu_layer;
@@ -107,6 +107,10 @@ static void window_load(Window *window) {
   about_menu_items[num_a3_items++] = (SimpleMenuItem){
     .title = "Contattalo",
 	.subtitle = "Blackpaw1996@gmail.com",
+  };
+  about_menu_items[num_a3_items++] = (SimpleMenuItem){
+    .title = "Hitchhiker",
+  .subtitle = "helivelton.gomes@gmail.com",
   };
   menu_sections[0] = (SimpleMenuSection){
   .title ="Matematica",
