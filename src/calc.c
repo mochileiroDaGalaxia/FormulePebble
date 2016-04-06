@@ -31,7 +31,11 @@ static void window_load(Window *window) {
   };  
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Regra da cadeia",
-	.subtitle = "f(g(x)) = f'(g(x))·g'(x)"
+	.staticubtitle = "f(g(x)) => f'(g(x))·g'(x)"
+  };
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(x^n)",
+  .subtitle = "f'(x) = nx^(n-1)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "D(ln(x))",
@@ -42,12 +46,151 @@ static void window_load(Window *window) {
 	.subtitle = "f'(e^x)= e^x·(du/dx)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "D[arcsine(x)]",
-	.subtitle = "1/((1-x²)^1/2)"
+    .title = "D(a^x)",
+  .subtitle = "(a^x)·ln(a)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "D[arctan(x)]",
-	.subtitle = "f'(arctan x) = 1/1+x²"
+    .title = "D(ln|x|)",
+  .subtitle = "1/x"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(log x na base a)",
+  .subtitle = "1/(x·ln(a))"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(sen(x))",
+  .subtitle = "cos(x)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(cos(x))",
+  .subtitle = "-sen(x)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(tg(x))",
+  .subtitle = "sec²(x)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(cossec(x))",
+  .subtitle = "-cossec(x)·cotg(x)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(sec(x))",
+  .subtitle = "sec(x)·tg(x)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(cotg(x))",
+  .subtitle = "-cossec²(x)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arcsen(x))",
+  .subtitle = "1/((1-x²)^1/2)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arccos(x))",
+  .subtitle = "-1/((1-x²)^1/2)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arctg(x))",
+  .subtitle = "1/(1+x²)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arccossec(x))",
+  .subtitle = "-1/(x·(x²-1)^1/2)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arcsec(x))",
+  .subtitle = "1/(x·(x²-1)^1/2)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arccotg(x))",
+  .subtitle = "-1/(1+x²)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(senh(x))",
+  .subtitle = "cosh(x)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(cosh(x))",
+  .subtitle = "senh(x)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(tgh(x))",
+  .subtitle = "sech²(x)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(cossech(x))",
+  .subtitle = "-cossech(x)·cotgh(x)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(sech(x))",
+  .subtitle = "-sech(x)·tgh(x)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(cotgh(x))",
+  .subtitle = "-cossech²(x)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arcsenh(x))",
+  .subtitle = "1/((1+x²)^1/2)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arccosh(x))",
+  .subtitle = "1/((x²-1)^1/2)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arctgh(x))",
+  .subtitle = "1/(1-x²)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arccossech(x))",
+  .subtitle = "-1/(|x|·(x²+1)^1/2)"
+  };
+
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arcsech(x))",
+  .subtitle = "-1/(x·(1-x²)^1/2)"
+  };
+
+  calc_menu_items[num_a_items++] = (SimpleMenuItem){
+    .title = "D(arccotgh(x))",
+  .subtitle = "1/(1-x²)"
   };
 
   menu_sections.num_items = NUM_CALC_MENU_ITEMS;
