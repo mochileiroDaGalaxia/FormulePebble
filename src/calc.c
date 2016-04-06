@@ -22,15 +22,15 @@ static void window_load(Window *window) {
   int num_a_items = 0;
 
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Regola del prodotto",
+    .title = "Regra do produto",
 	.subtitle = "uv' + vu'"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Regola del quoziente",
+    .title = "Regra do quociente",
 	.subtitle = "(vu' - uv')/v²"
   };  
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Chain Rule",
+    .title = "Regra da cadeia",
 	.subtitle = "f(g(x)) = f'(g(x))·g'(x)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
