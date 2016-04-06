@@ -71,8 +71,8 @@ static void window_load(Window *window) {
     .callback = geometry_select_callback,
   };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
-    .title = "Analisi",
-	.subtitle = "Formule Analitiche",
+    .title = "Calculo",
+	.subtitle = "Calculo 1",
     .callback = calc_select_callback,
   };
   math_menu_items[num_a_items++] = (SimpleMenuItem){
