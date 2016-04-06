@@ -2,7 +2,7 @@
 #include "calc.h"
 
 	
-#define NUM_CALC_MENU_ITEMS 7
+#define NUM_CALC_MENU_ITEMS 35
 
 static Window *window;
 
