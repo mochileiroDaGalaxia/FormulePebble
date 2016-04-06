@@ -31,7 +31,7 @@ static void window_load(Window *window) {
   };  
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "Regra da cadeia",
-	.staticubtitle = "f(g(x)) => f'(g(x))·g'(x)"
+	.subtitle = "f(g(x)) => f'(g(x))·g'(x)"
   };
   calc_menu_items[num_a_items++] = (SimpleMenuItem){
     .title = "D(x^n)",
